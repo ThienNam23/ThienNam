@@ -23,6 +23,7 @@ li {
 }
 
 li a{
+	color: white;
 	display: inline-block;
 	background-color: gray;
 	width: 150px; 
