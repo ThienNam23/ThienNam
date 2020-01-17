@@ -1,0 +1,98 @@
+body {
+    background-image: url(https://www.dorrancepublishing.com/wp-content/uploads/2019/06/Dorrance-Writing-For-Your-Audience-Fantasy-1.jpg);
+    background-attachment: fixed;
+    background-size: 1366px 668px;
+}
+
+h1 {
+    font-family: 'Algerian Regular';
+    text-align: center;
+    font-size: 75px;
+    text-shadow: 3px 3px 1px darkblue;
+    color: whitesmoke;
+    margin-bottom: 0px;
+}
+section {
+    text-align: center;
+    font-family: 'Agency FB';
+}
+
+form {
+    background-image: url(../Img/frame1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-bottom: 10px;
+    background-size: 50% 100%;
+}
+div {
+    position: relative;
+    left: -15px;
+}
+h2 {
+    padding: 50px;
+    font-size: 40px;
+    opacity: 100%;
+    margin-bottom: -10px;
+}
+
+h3 {
+    font-size: 25px;
+    display: inline;
+    vertical-align: -5px;
+    margin-right: 10px;
+}
+
+input {
+    height: 30px;
+    width: 275px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Agency FB';
+    font-weight: bold;
+}
+
+button {
+    height: 30px;
+    widows: 150px;
+    font-family: 'Colonna MT Regular';
+    font-weight: bold;
+    font-size: 25px;
+    height: 45px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: yellow;
+}
+
+button:hover {
+    background-color: #00FF00;
+    color: #FE2E2E;
+}
+ul {
+    margin: 30px 0px;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    font-size: 19px;
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+#warning {
+    position: relative;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    text-align: center;
+}
+
+#v_line {
+    font-weight: 700;
+    font-size: 20px;
+}
