@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Thiên Nam | Login Form</title>
+    <link href="../CSS/Login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1> DreamsWorld </h1>
+    <section>
+        <form action="https://fb.com" target="_blank" method="POST" onsubmit="return check()">
+            <h2> Login to DreamsWorld </h2>
+            <div>
+                <h3> Username: </h3>
+                <input type="text" name="username" placeholder="ID, phone number, email ..." onkeypress="return isEnter(event)" autofocus>
+            </div>
+            <div>
+                <h3> Password: </h3>
+                <input type="password" name="password" placeholder="Password ..." >
+            </div>
+            <div id="warning"></div>
+            <button type="submit" onclick="zero()"> Open DreamsGate </button>
+            <ul>
+                <li onclick="message()"><a href="#">Forgot password? </a></li> <span id="v_line"> | </span>
+                <li onclick="message()"><a href="#"> Creat new account </a></li>  <span id="v_line"> | </span>
+                <li onclick="message()"><a href="#"> Privacy & Term </a></li>
+            </ul>
+        </form>
+    </section>
+    
+    <script src="../JavaScript/Login.js"></script>
+</body>
+</html>
