@@ -85,11 +85,11 @@ a:hover {
     color: red;
 }
 #warning {
+    position: relative;
     display: block;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: red;
-    margin-left: 590px;
-    text-align: left;
+    text-align: center;
 }
 
 #v_line {
