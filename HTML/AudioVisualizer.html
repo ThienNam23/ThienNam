@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> ThienNam | Audio Visualizer </title>
+    <link href="../CSS/AudioVisualizer.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="initialize()">
+    <h1> Audio Visualizer </h1>
+    <hr width="50%" />
+    <div id="menu">
+        <h2> How to use? </h2>
+        <span> You can choose you Music: </span>
+        <input id="audioFile" type="file" accept="Audio/*" capture/>
+            <div id="msg1"> Playing ... </div>
+        <div id="block"> or select our avalable songs here: 
+            <select id="musicSelect" onchange="changeMusic()">
+                <option value="0"> Select our song </option>
+                <option value="1"> Kirara Magic & Yirokos - Chrono [Diversity Release] </option>
+                <option value="2"> Panda Eyes - Euphoria [Diversity Release] </option>
+                <option value="3"> Sansa Lala - Kayaz </option>
+                <option value="4"> Feint - Vagrant (ft. Veela) [Diversity Release] </option>
+                <option value="5"> PIKASONIC - Lost </option>
+                <option value="6"> Feint - Words (ft. Laura Brehm) [Diversity Release] </option>
+            </select>
+            <div id="msg2"> Playing ... </div>
+        </div>
+    </div>
+    <canvas id="cnv1" width="1024" height="400"></canvas>
+    <audio id="audio" autoplay controls></audio>
+    <script src="../JavaScript/AudioVisualizer.js"></script>
+    <ul>
+        <li> About: </li>
+        <li> Source code: <strong style="color: green;"> ryan-pfeifer1111 </strong></li>
+        <li> Follow him on Github: <a href="https://github.com/ryan-pfeifer1111" target="_blank"> Click here </a></li>
+        <li> Modify code: <strong style="color: green;"> ThienNam23 </strong></li>
+        <li> Follow me on Github: <a href="https://github.com/ThienNam23" target="_blank"> Click here </a></li>
+        <li> Original code of <strong style="color: green;"> ryan-pfeifer1111 </strong> : <a href="https://github.com/ryan-pfeifer1111/SoundVisualizer" target="_blank"> Click here </a></li>
+    </ul>
+</body>
+</html>
