@@ -12,10 +12,11 @@
     <hr width="50%" />
     <div id="menu">
         <h2> How to use? </h2>
-        <span> You can choose your Music: </span>
-        <input id="audioFile" type="file" accept="Audio/*" capture/>
-            <div id="msg1"> Playing ... </div>
-        <div id="block"> or select available songs here: 
+        <p> You can choose you Music:
+            <input id="audioFile" type="file" accept="Audio/*" capture/>
+            <span id="msg1"> Playing ... </span>
+        </p>
+        <p> or select available songs here: 
             <select id="musicSelect" onchange="changeMusic()">
                 <option value="0"> Select available songs </option>
                 <option value="1"> Kirara Magic & Yirokos - Chrono [Diversity Release] </option>
@@ -25,10 +26,11 @@
                 <option value="5"> PIKASONIC - Lost </option>
                 <option value="6"> Feint - Words (ft. Laura Brehm) [Diversity Release] </option>
             </select>
-            <div id="msg2"> Playing ... </div>
-        </div>
+            <span id="msg2"> Playing ... </span>
+        </p>
+        <hr align="left" width="50%" />
     </div>
-    <canvas id="cnv1" width="1024" height="400"></canvas>
+    <canvas id="cnv1" width="512" height="400"></canvas>
     <audio id="audio" autoplay controls></audio>
     <script src="../JavaScript/AudioVisualizer.js"></script>
     <ul>
