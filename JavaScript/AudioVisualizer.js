@@ -1,6 +1,6 @@
 var audio, canvas, context, audioctx, analyser, freqArr, barHeight, source;
 var WIDTH = 512,
-    HEIGHT = 400,
+    HEIGHT = 300,
     INTERVAL = 64, //256;
     SAMPLES = 2048; //4096;//1024;//512;//2048; //this is the main thing to change right now
 
