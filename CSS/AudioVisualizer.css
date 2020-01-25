@@ -33,7 +33,7 @@ body {
 
 #msg1{
     position: relative;
-    left: 45px;
+    left: 75px;
     display: none;
     color: magenta;
 }
@@ -42,7 +42,7 @@ body {
     display: none;
     color: magenta;
     position: relative;
-    left: 34px;
+    left: 65px;
 }
 
 li {
