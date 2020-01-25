@@ -17,7 +17,7 @@
             <span id="msg1"> Playing ... </span>
         </p>
         <p> or select available songs here: 
-            <select id="musicSelect" onchange="changeMusic()">
+            <select id="musicSelect" onchange="changeMusic()" >
                 <option value="0"> Select available songs </option>
                 <option value="1"> Kirara Magic & Yirokos - Chrono [Diversity Release] </option>
                 <option value="2"> Panda Eyes - Euphoria [Diversity Release] </option>
@@ -31,7 +31,7 @@
         <hr align="left" width="50%" />
     </div>
     <canvas id="cnv1" width="512" height="300"></canvas>
-    <audio id="audio" autoplay controls></audio>
+    <audio crossorigin="anonymous" id="audio" autoplay controls ></audio>
     <script src="../JavaScript/AudioVisualizer.js"></script>
     <ul>
         <li> About: </li>
