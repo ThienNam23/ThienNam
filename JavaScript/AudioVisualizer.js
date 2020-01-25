@@ -1,7 +1,7 @@
 var audio, canvas, context, audioctx, analyser, freqArr, barHeight, source;
-var WIDTH = 1024,
+var WIDTH = 512,
     HEIGHT = 400,
-    INTERVAL = 128, //256;
+    INTERVAL = 64, //256;
     SAMPLES = 2048; //4096;//1024;//512;//2048; //this is the main thing to change right now
 
 
@@ -27,7 +27,6 @@ function initialize(){
     // drawing the canvas
     canvas = document.getElementById("cnv1");
     context = canvas.getContext("2d");
-    canvas.style.marginLeft = (window.innerWidth - canvas.innerWidth)/2 + "px";
 
     // getting audio file
     audio = document.getElementById("audio");
@@ -73,11 +72,7 @@ function draw(){
         let r = 0, g = 0, b = 255, x = 0;
         context.clearRect(0,0,WIDTH, HEIGHT);
         analyser.getByteFrequencyData(freqArr);
-        for (let i = 0; i < 32; i++){
-            context.fillRect(i, HEIGHT, (WIDTH/INTERVAL) - 1 , 1);
-            x = x + (WIDTH/INTERVAL);
-        }
-        for(var i = 0; i < INTERVAL/2 - 1; i++){
+        for(var i = 0; i < INTERVAL - 1; i++){
             
             var i = i;
             barHeight = freqArr[i*2] + freqArr[i*2 + 1] - 254;
