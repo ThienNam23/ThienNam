@@ -16,7 +16,7 @@ body {
 
 #audioFile{
     position: relative;
-    left: 35px;
+    left: 33px;
     width: 330px;
     display: inline-block;
 }
@@ -33,7 +33,7 @@ body {
 
 #msg1{
     position: relative;
-    left: 70px;
+    left: 68px;
     display: none;
     color: magenta;
 }
