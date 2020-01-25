@@ -8,19 +8,21 @@ var WIDTH = 512,
 //plays the user's uploaded audio file when it is uploaded
 audioFile.onchange = function(){ 
     //audio = document.getElementById("audio");
-    var reader = new FileReader();
+    var reader = new FileReader(); 
     reader.onload = function(e){
         audio.src = this.result;
         audio.controls = true;
-        audio.crossOrigin = "anonymous";
         audio.play();
-    }
+    };
     reader.readAsDataURL(this.files[0]);
     window.requestAnimationFrame(draw);
+    // Notify that song is playing
     let b = document.getElementById("msg1");
     b.style.display = "inline";
     b = document.getElementById("msg2");
     b.style.display = "none";
+    // clear cache
+    document.getElementById("musicSelect").selectedIndex = 0;
 };
 
 function initialize(){
@@ -48,23 +50,27 @@ function initialize(){
 
     // requesting window animation
     window.requestAnimationFrame(draw);
+	
 };
 
 function changeMusic(){
     let musicSelected = document.getElementById("musicSelect");
     switch (musicSelected.selectedIndex){
-        case 1: audio.src = "../Audio/Kirara Magic & Yirokos - Chrono [Diversity Release].mp3"; break;
-        case 2: audio.src = "../Audio/Panda Eyes - Euphoria [Diversity Release].mp3"; break;
-        case 3: audio.src = "../Audio/Sansa Lala - Kayaz.mp3"; break;
-        case 4: audio.src = "../Audio/Feint - Vagrant (ft. Veela) [Diversity Release].mp3"; break;
-        case 5: audio.src = "../Audio/PIKASONIC - Lost.mp3"; break;
-        case 6: audio.src = "../Audio/Feint - Words (ft. Laura Brehm) [Diversity Release].mp3"; break;
+        case 1: audio.src = "https://thiennam23.github.io/ThienNam/Audio/Kirara%20Magic%20%26%20Yirokos%20-%20Chrono%20%5BDiversity%20Release%5D.mp3"; break;
+        case 2: audio.src = "https://thiennam23.github.io/ThienNam/Audio/Panda%20Eyes%20-%20Euphoria%20%5BDiversity%20Release%5D.mp3"; break;
+        case 3: audio.src = "https://thiennam23.github.io/ThienNam/Audio/Sansa%20Lala%20-%20Kayaz.mp3"; break;
+        case 4: audio.src = "https://thiennam23.github.io/ThienNam/Audio/Feint%20-%20Vagrant%20(ft.%20Veela)%20%5BDiversity%20Release%5D.mp3"; break;
+        case 5: audio.src = "https://thiennam23.github.io/ThienNam/Audio/PIKASONIC%20-%20Lost.mp3"; break;
+        case 6: audio.src = "https://thiennam23.github.io/ThienNam/Audio/Feint%20-%20Words%20(ft.%20Laura%20Brehm)%20%5BDiversity%20Release%5D.mp3"; break;
         default: {};
     }
+    // Notify that song is playing
     let b = document.getElementById("msg2");
     b.style.display = "inline";
     b = document.getElementById("msg1");
     b.style.display = "none";
+    // clear cache
+    document.getElementById("audioFile").value = "";
 };
 
 function draw(){
