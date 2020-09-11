@@ -1,0 +1,16 @@
+{
+  "messages": [
+    {
+      "text": "Hello World"
+    }
+  ],
+  "actions": [
+    {
+      "type": "set_variable",
+      "data": {
+        "userName": "BotStar Demo",
+        "userPhone": "+123456789"
+      }
+    }
+  ]
+}
