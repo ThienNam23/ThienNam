@@ -1,17 +1,1 @@
-{
-  "messages": [
-    {
-      "text": "Hello World"
-    }
-  ],
-  "actions": [
-    {
-      "type": "set_variable",
-      "data": {
-        "userName": "Thien Nam",
-        "userPhone": "+84977944023",
-        "userName": "Thien Nam1"
-      }
-    }
-  ]
-}
+{ "actions": [ { "type": "set_variable", "data": {"dog" : "true"} } ] }
